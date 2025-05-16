@@ -126,7 +126,7 @@ body{
 
 
 .player:hover{
-    transform: scale(1.08);
+    
     border: 3px solid rgba(255, 255, 255, 0.4);
     cursor: pointer;
 }
