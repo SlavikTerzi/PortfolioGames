@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    background-color: #324aa8;
+    background: linear-gradient(45deg,rgba(42, 123, 155, 1) 0%, rgba(217, 30, 105, 1) 50%, rgba(34, 115, 181, 1) 100%);
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+    display: flex;
+}
+
+/* header{
+    width: 100%;
+    height: calc(var(--index)*3);
+    border: 5px solid black;
+} */
+
+
+
+.container{
+    width: 30%;
+    position: relative;
+    display: inline-block;
+    margin: 10px calc(var(--index));
+    
+    box-shadow: -3px 4px 11px 0px rgba(0,0,0,1);
+
+}
+
+
+.filmImage{
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
+
+.block{
+    position: absolute;
+   
+    
+    border: 3px solid rgba(255, 255, 255);
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    cursor: pointer;
+    background: linear-gradient(45deg,rgba(42, 123, 155, 1) 0%, rgba(217, 30, 105, 1) 50%, rgba(34, 115, 181, 1) 100%);
+    
+    transition: all .2s ease-in-out;
+    
+}
+
+.block:hover{
+    z-index: 100;
+    transform: scale(1.15);
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    animation: gradient 5s ease infinite;
+}
+
+
+
+.block b{
+    font-family: "Cal Sans", sans-serif;
+    display: inline-block;
+    margin: auto;
+    /* font-size: calc(var(--index)*0.8); */
+    font-size: 90%;
+}
+
+
+
+
+.players{
+    position: relative;
+    height: 98vh;
+    width: 30%;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    margin: 10px calc(var(--index));
+    display: flex;
+    padding: calc(var(--index));
+    flex-direction: column;
+    gap: 10px;
+}
+
+.player{
+    display: flex;
+    position: relative;
+    width: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    padding: calc(var(--index)*0.5);
+    transition: all .3s ease-in-out;
+    
+}
+
+.playerImg{
+    height: calc(var(--index)*3);
+    margin: auto 0;
+}
+
+.playerText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: calc(var(--index)*0.7);
+    text-align: start;
+    color: #f2f2f2;
+    font-size: calc(var(--index)*.8);
+}
+
+.playerPoint span{
+    font-size: calc(var(--index));
+    color: #fff;
+}
+
+
+.player:hover{
+    transform: scale(1.08);
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.deleatePlayerBtn{
+    position: absolute;
+    padding: calc(var(--index)*.2);
+    color: white;
+    top: calc(var(--index)*.3);
+    right: calc(var(--index)*.3);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.player:hover .deleatePlayerBtn{
+    opacity: 1;
+
+}
+
+.deleatePlayerBtn:hover{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    
+}
+
+.playerButton{
+    display: flex;
+    margin-left: auto ;
+    margin-right: calc(var(--index)*1.2) ;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.playerButton button{
+    padding: 2px calc(var(--index));
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.playerButton .trueBtn{
+    background: linear-gradient(30deg,rgba(166, 227, 109, 1) 35%, rgba(2, 168, 107, 1) 100%);
+}
+
+.playerButton .falseBtn{
+    background: linear-gradient(30deg,rgba(222, 141, 106, 1) 17%, rgba(145, 25, 1, 1) 100%);
+}
+
+.playerButton button:hover{
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    transform: scale(1.05);
+}
+
+
+.nextImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    color: rgba(255,255,255, 0);
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    font-size: calc(var(--index)*1.4);
+    display: flex;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    
+}
+
+.nextImage:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+.nextImage:hover span{
+    color: rgba(255,255,255, 1);
+}
+
+
+.nextImage span{
+    
+    margin: auto;
+    transition: all .3s ease-in-out;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.hiddenNextImage{
+    display: none;
+}
+
+
+
+
+@keyframes gradient{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+@media (max-width:560px){
+    body{
+        flex-direction: column-reverse;
+        width: 98vw;
+        margin: 0 auto;
+    }
+
+    .container{
+        height: 75vh;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .players{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        
+        margin: 10px 0;
+        height: 25vh;
+    }
+
+    .player{
+        box-sizing: border-box;
+        display: block;
+        width: 30%;
+    }
+
+    .playerButton{
+        width: 100%;
+        padding: 2px 0;
+    }
+
+}
