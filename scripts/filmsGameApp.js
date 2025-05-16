@@ -253,10 +253,13 @@ function madeBlocks(){
     let numberBlock = 1;
 
 
-    let count = 0;
-    const amountBlock = 7;
-    const sqrSizeW = 100/amountBlock;
-    const sqrSizeH = 100/amountBlock*0.7;
+    let countX = 0;
+    const amountBlockX = 7;
+    let countY = 0;
+    const amountBlockY = 10;
+    
+    const sqrSizeW = 100/amountBlockX;
+    const sqrSizeH = 100/amountBlockY;
 
     
 
@@ -267,13 +270,22 @@ function madeBlocks(){
             randomColor = '#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase();
             containerBlock.insertAdjacentHTML('beforeend','<div class="block" style="background-size: 200% 200%;left:'+left+'%;top:'+top+'%; " ><b class="blockText">'+numberBlock+'</b></div>' );
             numberBlock+=1;
-            count++;
-            if(count===amountBlock){
+            countX++;
+            
+            if(countX===amountBlockX){
                 left = widthImage;
-                count=0;
+                countX=0;
             }
+
+            
+
+            
         }
-        
+        countY++;
+        if(countY===amountBlockY){
+                top = heightImage;
+                countY  =0;
+        }
         
     }
 

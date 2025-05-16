@@ -19,6 +19,7 @@ body{
     background-size: 200% 200%;
     animation: gradient 10s ease infinite;
     display: flex;
+    
 }
 
 /* header{
@@ -37,7 +38,7 @@ body{
     margin: 10px calc(var(--index));
     
     box-shadow: -3px 4px 11px 0px rgba(0,0,0,1);
-    overflow-y: hidden;
+    
 }
 
 
