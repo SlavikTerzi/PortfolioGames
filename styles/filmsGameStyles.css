@@ -12,7 +12,7 @@
 
 body{
     position: relative;
-    height: 100vh;
+    
     text-align: center;
     background-color: #324aa8;
     background: linear-gradient(45deg,rgba(42, 123, 155, 1) 0%, rgba(217, 30, 105, 1) 50%, rgba(34, 115, 181, 1) 100%);
@@ -31,6 +31,7 @@ body{
 
 .container{
     width: 30%;
+    height: 98vh;
     position: relative;
     display: inline-block;
     margin: 10px calc(var(--index));
@@ -83,7 +84,7 @@ body{
 
 .players{
     position: relative;
-    height: 98vh;
+    min-height: 97%;
     width: 30%;
     border: 3px solid rgba(255, 255, 255, 0.15);
     margin: 10px calc(var(--index));
@@ -242,6 +243,7 @@ body{
         flex-direction: column-reverse;
         width: 98vw;
         margin: 0 auto;
+        height: 100%;
     }
 
     .container{
@@ -268,7 +270,13 @@ body{
 
     .playerButton{
         width: 100%;
-        padding: 2px 0;
+        padding: 0;
+        margin: 0;
+        justify-content: space-around;
+
+    }
+    .playerButton button{
+        
     }
 
 }
