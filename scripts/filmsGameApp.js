@@ -255,8 +255,8 @@ function madeBlocks(){
 
     let count = 0;
     const amountBlock = 7;
-    const sqrSizeW = widthImage/amountBlock;
-    const sqrSizeH = (heightImage/ Math.round(amountBlock*(heightImage/widthImage)));
+    const sqrSizeW = 100/amountBlock;
+    const sqrSizeH = 100/amountBlock*0.7;
 
     
 
@@ -265,7 +265,7 @@ function madeBlocks(){
     for(let top= 0;top<heightImage;top=top+sqrSizeH){
         for(let left = 0;left<widthImage;left=left+sqrSizeW){
             randomColor = '#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase();
-            containerBlock.insertAdjacentHTML('beforeend','<div class="block" style="background-size: 200% 200%;left:'+left+'px;top:'+top+'px; " ><b class="blockText">'+numberBlock+'</b></div>' );
+            containerBlock.insertAdjacentHTML('beforeend','<div class="block" style="background-size: 200% 200%;left:'+left+'%;top:'+top+'%; " ><b class="blockText">'+numberBlock+'</b></div>' );
             numberBlock+=1;
             count++;
             if(count===amountBlock){
@@ -282,8 +282,8 @@ function madeBlocks(){
 
 
     for(let i =0;i<numberBlock;i++){
-        block[i].style.width = sqrSizeW+"px";
-        block[i].style.height = sqrSizeH+"px";
+        block[i].style.width = sqrSizeW+"%";
+        block[i].style.height = sqrSizeH+"%";
         let randomColorFirst = '#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase();
         let randomColorSecond = '#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase();
         randomColor = "linear-gradient(70deg, "+randomColorFirst+", "+randomColorSecond+")"; 
