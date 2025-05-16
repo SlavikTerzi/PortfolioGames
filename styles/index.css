@@ -162,3 +162,40 @@ body{
     background: url('/img/icons/brainstorm.png');
     background-size: calc(var(--index)*.7) calc(var(--index)*.7);
 }
+
+
+@media (max-width:1300px){
+    .game img{
+        height: 60%;
+    }
+
+    .game{
+        width: 49%;
+    }
+}
+
+@media (max-width:830px){
+    .container{
+        height: 100%;
+    }
+    .games{
+        flex-direction: column;
+    }
+    .game{
+        width: 98%;
+        margin-bottom: calc(var(--index)*.3);
+    }
+
+    .game img{
+        height: 25vh;
+    }
+
+    .game:hover img{
+        height: 20vh;
+    }
+
+    .mainContcts{
+        flex-direction: column;
+        text-align: left;
+    }
+}
