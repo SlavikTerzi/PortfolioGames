@@ -139,6 +139,46 @@ const images =[
         src: "https://i.pinimg.com/736x/27/8b/99/278b9967c7bc51c2c39f5ab8dc490c8e.jpg",
         answer: "Тупой и еще тупее",
     },
+     {
+        id: 28,
+        src: "https://i.pinimg.com/736x/f3/6b/77/f36b77c9836a8c4707199899aff85e1f.jpg",
+        answer: "Гра в імітацію",
+    },
+     {
+        id: 29,
+        src: "https://i.pinimg.com/736x/f0/7b/97/f07b9716917f56702f7e4be1b4b0bb85.jpg",
+        answer: "Логан",
+    },
+     {
+        id: 30,
+        src: "https://i.pinimg.com/736x/59/09/49/590949bde9f039e2565cd75445a9e9d8.jpg",
+        answer: "Венсдей",
+    },
+     {
+        id: 31,
+        src: "https://i.pinimg.com/736x/59/09/49/590949bde9f039e2565cd75445a9e9d8.jpg",
+        answer: "Виживший",
+    },
+     {
+        id: 32,
+        src: "https://i.pinimg.com/736x/a2/be/4c/a2be4c7b2b45b955c8fcf84bc4b89a20.jpg",
+        answer: "Квін",
+    },
+     {
+        id: 33,
+        src: "https://i.pinimg.com/736x/33/80/84/3380843027ecfc2e958ed9b86f932b94.jpg",
+        answer: "Рембо",
+    },
+     {
+        id: 34,
+        src: "https://i.pinimg.com/736x/0d/d1/6c/0dd16cfd0a22ab08faf6a3ebc43b298a.jpg",
+        answer: "Зоряні війни",
+    },
+     {
+        id: 35,
+        src: "https://i.pinimg.com/736x/19/40/3d/19403d18207085192622462b9d77751d.jpg",
+        answer: "Великий Куш",
+    }
 
 ];
 
