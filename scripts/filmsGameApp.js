@@ -154,7 +154,7 @@ for(let i=0;i<images.length;i++){
 const players = [
     {
         id:0,
-        name: "Андрій",
+        name: "Наталі",
         points: 0,
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJWLc6xFckdrEejCbn7PFdZyWJdVWBlmUg8A&s",
         
@@ -177,12 +177,7 @@ const players = [
         points: 0,
         img: "https://cdn.pixabay.com/photo/2021/01/11/13/03/big-chungus-5908358_960_720.png",
     },
-    {
-        id:3,
-        name: "Наталі",
-        points: 0,
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTCRsgPtlXLCLRVNJ_o7AY-3yAwwIAdpiPQA&s",
-    },
+   
 ];
 
 const createPlayers = ()=>{
